@@ -13,10 +13,20 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #171717;
-    --foreground: #ededed;
-  }
+  /*
+  BRAND COLORS (Design Tokens)
+  - Central source of truth
+  - Used across the app
+*/
+
+:root {
+  --color-primary: #004aad;
+  --color-secondary: #5f6368;
+  --color-accent: #f9ab00;
+  --color-muted: #f1f3f4;
+  --color-heading-1: #000000;
+}
+
 }
 
 body {

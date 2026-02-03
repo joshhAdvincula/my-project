@@ -15,7 +15,8 @@ export default function Navbar() {
   */
 
   return (
-    <nav className="bg-primary text-white p-6">
+    <nav className="bg-[var(--color-primary)] text-white p-6">
+
       {/*
         MENU LIST:
         - Home
