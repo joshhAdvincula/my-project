@@ -15,21 +15,23 @@ export default function Navbar() {
   */
 
   return (
-    <nav className="bg-[var(--color-primary)] text-white p-6">
+    <nav className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 shadow-sm z-50 ">
+      <div className="max-w-6xl mx-auto px-4 py-5 flex items-center justify-between">
+        
+        {/* Logo (left) */}
+        <div className="font-semibold text-[var(--color-primary)]">
+          My Portfolio
+        </div>
 
-      {/*
-        MENU LIST:
-        - Home
-        - Project
-        - About
-        - Contact
-      */}
-      <ul className="flex gap-8 text-sm font-medium text-secondary">
-        <li>Home</li>
-        <li>Project</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+        {/* Menu (right) */}
+        <ul className="flex gap-4 md:gap-8">
+          <li>Home</li>
+          <li>Project</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+      </div>
     </nav>
   );
 }
